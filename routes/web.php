@@ -1,12 +1,12 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ResepController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ChangePasswordController;
-
 
 // Category
 Route::get('/category', [CategoryController::class, 'index'])->name('category');
@@ -16,7 +16,6 @@ Route::post('/insertcategory', [CategoryController::class, 'store']);
 Route::get('/editcategory/{id}', [CategoryController::class, 'edit']);
 Route::post('/updatecategory/{id}', [CategoryController::class, 'update']);
 Route::get('/deletecategory/{id}', [CategoryController::class, 'destroy']);
-
 
 //Resep
 Route::get('/resep', [ResepController::class, 'index'])->name('resep');
@@ -37,7 +36,7 @@ Route::get('/editvideo/{id}', [VideoController::class, 'edit']);
 Route::post('/updatevideo/{id}', [VideoController::class, 'update']);
 Route::get('/deletevideo/{id}', [VideoController::class, 'destroy']);
 
-//user
+// User
 Route::get('/user', [UserController::class, 'index'])->name('user');
 Route::get('/edituser/{id}', [UserController::class, 'edit']);
 Route::post('/updateuser/{id}', [UserController::class, 'update']);
@@ -45,7 +44,7 @@ Route::post('/updateuser/{id}', [UserController::class, 'update']);
 Route::get('/setting/{id}', [UserController::class, 'setting']);
 Route::post('/updatesetting/{id}', [UserController::class, 'updatesetting']);
 
-// renew password
+// Renew password
 Route::get('change-password', [ChangePasswordController::class, 'index']);
 Route::post('change-password', [ChangePasswordController::class, 'store'])->name('change.password');
 

@@ -113,7 +113,7 @@
         <li class="nav-item">
           <a href="/setting/{{$id}}" class="nav-link">
             <i class="fa-solid fa-video"></i>
-            <p class="text-white">
+            <p>
               Setting
             </p>
           </a>

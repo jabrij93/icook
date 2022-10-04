@@ -36,7 +36,7 @@ $role = Auth::user()-> role ?? null
             @foreach ( $category as $data )
             <tr>
                 <td> {{ $no++ }} </td>
-                <td>{{ $data-> name }}</td>
+                <td> {{ $data-> name }} </td>
                 <td>
                     <a href="/editcategory/{{$data->id}}" class="btn btn-outline-warning"> <i class="fa-regular fa-pen-to-square"></i></a>
                     <a href="/deletecategory/{{$data->id}}" class="btn btn-outline-danger" onclick="return confirm('Confirm to delete data?')"> <i class="fa-solid fa-trash" href="/editcategory"> </i></a>

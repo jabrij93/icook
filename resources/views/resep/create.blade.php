@@ -29,9 +29,9 @@
     </div>
 
 
-    <div class="mb-3">
+    <div class="mb-3 col-6">
         <label class="form-label">Resep</label>
-        <textarea name="resep" id="" cols="40" rows="10"></textarea>
+        <textarea class="form-control" name="resep" id="" cols="40" rows="10"></textarea>
     </div>
 
 
@@ -39,9 +39,9 @@
         <label class="form-label">Images</label>
         <input type="file" class="form-control" name="images">
     </div>
-    <button type="submit" class="btn btn-primary mt-2 mb-3 ml-2">Submit</button>
+    <button type="submit" class="btn btn-primary mt-3 mb-2 ml-2">Submit</button>
 </form>
 
-<a href="/resep">Back</a>
+<a href="/resep" class="ml-2">Back</a>
 
 @endsection

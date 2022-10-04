@@ -25,7 +25,7 @@ $role = Auth::user()->role ?? null
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 ">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h1 class="card-title text-primary">Resep</h1>
@@ -38,7 +38,7 @@ $role = Auth::user()->role ?? null
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 ml-2">
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h1 class="card-title text-primary">Video</h1>

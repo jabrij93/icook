@@ -27,5 +27,5 @@
     <button type="submit" class="btn btn-primary mt-2 mb-3 ml-2">Submit</button>
 </form>
 
-<a href="/video">Back</a>
+<a href="/video" class="ml-2">Back</a>
 @endsection

@@ -9,18 +9,16 @@
 
     @csrf
 
-    <div class="mb-2 col-6">
+    <div class="mb-2 col-4">
         <label class="form-label">Name</label>
         <input type="text" class="form-control" name="name" value="{{$user->name}}">
     </div>
 
-    <div class="mb-3">
-        <label class="form-label">Email</label>
-        <input type="email" name="email" id="" cols="40" rows="10" value="{{$user->email}}">
+    <div class="mb-2 col-4">
+        <label class="form-label"><br> Email</label>
+        <input class="form-control" type="email" name="email" id="" value="{{$user->email}}">
     </div>
 
     <button type="submit" class="btn btn-primary mt-2 mb-3 ml-2">Submit</button>
 </form>
-
-<a href="/user">Back</a>
 @endsection
