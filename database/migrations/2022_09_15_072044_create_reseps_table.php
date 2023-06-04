@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('reseps', function (Blueprint $table) {
             $table->id();
-            $table->integer('id_category');
+            $table->unsignedBigInteger('id_category');
             $table->string('title');
             $table->text('resep');
             $table->text('images')->nullable();

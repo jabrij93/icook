@@ -15,7 +15,6 @@ class ResepController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-
     {
         $id = Auth::user()->id;
         $role = Auth::user()->role;
@@ -131,6 +130,6 @@ class ResepController extends Controller
     {
         $data = Resep::find($id);
         $data->delete();
-        return redirect()->route('resep')->with('success', 'Category has been updated successfully');
+        return redirect()->route('resep')->with('success', 'Resep has been updated successfully');
     }
 }

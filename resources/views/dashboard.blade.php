@@ -93,5 +93,4 @@ $role = Auth::user()->role ?? null
     </div>
 </div>
 @endif
-
 @endsection

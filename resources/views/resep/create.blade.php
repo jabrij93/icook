@@ -28,12 +28,10 @@
         <input type="text" class="form-control" name="title">
     </div>
 
-
     <div class="mb-3 col-6">
         <label class="form-label">Resep</label>
         <textarea class="form-control" name="resep" id="" cols="40" rows="10"></textarea>
     </div>
-
 
     <div class="mt-3 col-6">
         <label class="form-label">Images</label>
